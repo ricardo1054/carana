@@ -3,40 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dispensador de Toallas Femeninas</title>
+    <title>CARANA - Dispensador de Toallas Femeninas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Conoce Nuestros Dispensadores Toallas Femeninas</h1>
+        <div class="container">
+            <div class="company-name">CARANA</div>
+            <h1>Dispensador de Toallas Femeninas</h1>
+            <p>Innovación en Higiene y Comodidad</p>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html">Galería de Fotos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="introduction">
-        <h2>Protección y Comodidad</h2>
-        <p>Nuestras toallas femeninas ofrecen la máxima protección y comodidad durante tu ciclo. Diseñadas con materiales suaves y absorbentes para que te sientas segura y cómoda todo el día.</p>
-    </section>
+    <main class="container">
+        <section class="product-info">
+            <div class="product-image">
+                <img src="Carana1.jpg" alt="Dispensador de Toallas Femeninas CARANA">
+            </div>
+            <div class="product-details">   
+                <h2>Nuestro Producto Revolucionario</h2>
+                <p>CARANA presenta el dispensador de toallas femeninas más avanzado y conveniente del mercado. Diseñado pensando en la comodidad y la higiene de la mujer moderna.</p>
+                <a href="#" class="cta-button">Solicitar Información</a>
+            </div>
+        </section>
 
-    <section id="products">
-        <h2>Nuestros Productos</h2>
-        <div class="product">
-            <img src="toalla1.jpg" alt="Toalla Femenina Día">
-            <h3>Toalla Femenina Día</h3>
-            <p>Especialmente diseñada para usar durante el día. Protección ligera y discreta.</p>
-        </div>
-        <div class="product">
-            <img src="toalla2.jpg" alt="Toalla Femenina Noche">
-            <h3>Toalla Femenina Noche</h3>
-            <p>Ideal para la noche, con mayor absorción para un sueño sin preocupaciones.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contáctanos</h2>
-        <p>¿Tienes alguna pregunta? Escríbenos a <a href="mailto:info@toallasfemeninas.com">info@toallasfemeninas.com</a></p>
-    </section>
+        <section class="features">
+            <h2>Características Principales</h2>
+            <div class="feature-item">
+                <h3>Diseño Higiénico</h3>
+                <p>Fabricado con materiales antibacterianos para mantener las toallas en perfectas condiciones.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Fácil de Usar</h3>
+                <p>Mecanismo de dispensación suave y silencioso para una experiencia cómoda.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Capacidad Óptima</h3>
+                <p>Almacena hasta 50 toallas, reduciendo la frecuencia de recarga.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Instalación Versátil</h3>
+                <p>Puede montarse en la pared o usarse como unidad independiente.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Toallas Femeninas. Todos los derechos reservados.</p>
+        <div class="container footer-content">
+            <div class="contact-info">
+                <p>Teléfono: +1 234 567 890</p>
+                <p>Email: info@carana.com</p>
+                <p>Dirección: Calle Principal 123, Ciudad, País</p>
+            </div>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+                <a href="#" aria-label="Instagram">IG</a>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
